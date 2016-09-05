@@ -13,7 +13,7 @@ echo "Deploying..."
  
 git push origin :gh-pages
 git commit -am 'commit from paris, france.'
-git subtree push --prefix angular2-webpack-starter/dist/ origin gh-pages || {
+git subtree push --prefix ng-s/dist/ origin gh-pages || {
 echo "something bad happened"
 echo "deleting gh-pages"
 git branch -D gh-pages
@@ -36,7 +36,7 @@ echo "deleting old gh-pages"
 git push origin :gh-pages
 echo "pushing dist!"
 cd ..
-git subtree push --prefix angular2-webpack-starter/dist/ origin gh-pages
+git subtree push --prefix ng-s/dist/ origin gh-pages
 
 
 }
